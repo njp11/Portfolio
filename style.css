@@ -1,0 +1,255 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.my-sign {
+  margin-left: 15px;
+}
+.current {
+  font-family: 'Merienda', cursive;
+  color: #fc6600 !important;
+  font-weight: bold;
+  border-bottom: 3px solid #fc6600;
+}
+
+.my-link {
+  font-family: 'Merienda', cursive;
+  color: #ffffff !important;
+}
+.my-link:hover {
+  font-weight: bold;
+}
+
+/* Homepage Styling */
+
+#home {
+  background: url('./dist/img/abs3.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+}
+#home::after {
+  content: '';
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 2;
+}
+
+.home-content {
+  top: 30%;
+  position: absolute;
+  z-index: 3;
+  color: #ffffff;
+  text-align: center;
+}
+
+.name {
+  font-size: 5rem;
+  font-weight: 500;
+  font-style: italic;
+  font-family: 'Sacramento', cursive;
+}
+.name2 {
+  font-family: 'Merienda', cursive;
+}
+.caps {
+  color: #fc6600;
+  font-size: 6rem;
+  font-weight: 700;
+}
+.git {
+  color: #131418;
+  background-color: #ffffff;
+  border-radius: 100%;
+}
+.git:hover {
+  font-size: 4rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.75);
+}
+
+.fa-linkedin {
+  color: #0077b5;
+}
+.fa-linkedin:hover {
+  font-size: 4rem;
+  border-radius: 10%;
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.75);
+}
+
+/*About page styling*/
+body.about {
+  background-image: linear-gradient(black, 80%, rgb(82, 33, 0));
+  background-attachment: fixed;
+}
+
+.about-head {
+  margin-top: 3%;
+  margin-left: 3.5%;
+  color: #fc6600;
+  font-family: 'Merienda', cursive;
+}
+
+.my-info {
+  margin-top: 60px;
+}
+.portrait {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.my-img {
+  height: 250px;
+  width: 250px;
+  border: 3px solid #fc6600;
+  border-radius: 50%;
+}
+
+.my-bio {
+  color: #ffffff;
+  font-size: 1.2rem;
+  padding-top: 30px;
+}
+
+/* Project page */
+
+body.my-work {
+  background-color: #000000;
+}
+
+.project-head {
+  margin-top: 3%;
+  margin-left: 3.5%;
+  margin-bottom: 50px;
+  color: #fc6600;
+  font-family: 'Merienda', cursive;
+}
+
+.card-header {
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+.card {
+  background-color: #ffffff;
+}
+.card:hover {
+  box-shadow: 0px 0px 3px 5px rgba(231, 166, 26, 0.86);
+}
+
+.img-thumbnail {
+  width: 280px;
+  height: 280px;
+}
+
+/* Contact Page */
+
+body.contact {
+  background: url('./dist/img/star2.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+}
+body.contact::before {
+  content: '';
+  background-color: #000000;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.8;
+  position: absolute;
+  z-index: -1;
+}
+
+.contact-head {
+  margin: 3% 2% 5% 3.5%;
+  color: #fc6600;
+  font-family: 'Merienda', cursive;
+}
+
+.box {
+  display: inline-block;
+  border: 3px solid #fc6600;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 5px 2px rgba(128, 128, 128, 0.75);
+}
+.email,
+.phone {
+  color: #ffffff;
+}
+.fa-envelope-square {
+  color: #007ee5;
+}
+.fa-phone-square-alt {
+  color: #fffc00;
+}
+.icons a {
+  text-decoration: none;
+}
+.icons a:hover {
+  text-decoration: none;
+}
+
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-facebook:hover {
+  font-size: 4rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.75);
+}
+.fa-instagram {
+  color: #e4405f;
+}
+.fa-instagram:hover {
+  font-size: 4rem;
+  border-radius: 25%;
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.75);
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-twitter:hover {
+  font-size: 4rem;
+  border-radius: 50%;
+  box-shadow: 0px 0px 5px 3px rgba(128, 128, 128, 0.75);
+}
+
+@media screen and (max-width: 650px) {
+  .my-img {
+    height: 200px;
+    width: 200px;
+  }
+  .email,
+  .phone {
+    font-size: 1rem;
+  }
+  .fa-facebook {
+    font-size: 2.5rem;
+  }
+  .fa-facebook:hover {
+    font-size: 3rem;
+  }
+
+  .fa-instagram {
+    font-size: 2.5rem;
+  }
+  .fa-instagram:hover {
+    font-size: 3rem;
+  }
+
+  .fa-twitter {
+    font-size: 2.5rem;
+  }
+  .fa-twitter:hover {
+    font-size: 3rem;
+  }
+}
